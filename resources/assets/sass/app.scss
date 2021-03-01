@@ -1,7 +1,6 @@
 *,
 ::after,
 ::before {
-    border: solid 1px black;
     box-sizing: border-box;
 }
 
@@ -12,14 +11,21 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: "PingFang", sans-serif, "Microsoft JhengHei", "Microsoft YaHei";
+    color: #1f1f1f;
+}
+
+a {
+    color: #1f1f1f;
 }
 
 .wrapper {
     height: 100%;
+    background-color: #f5f5f5;
 }
 
 .container {
     min-height: calc(100% - 170px);
+    background-color: #fff;
 }
 
 .navbar,
@@ -50,6 +56,7 @@ body {
     margin: 0px -15px;
 }
 .product {
+    border: 1px solid #f5f5f5;
     &-warpper {
         width: 100%;
         max-width: calc(100% / 6);

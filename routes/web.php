@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::resource('products', 'ProductController');
+Route::get('/products/{id}', 'ProductController@show');
 
-Route::get('/products/{id?}', function () {
-    return view('product');
-});
-// Route::get('/products/{id?}', 'ProductsController@show');
+Route::get('/addCartProduct/{productId}', 'CartController@addItem');
